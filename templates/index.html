@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/styles.css" rel="stylesheet">
+        <title>AI 4 ALL</title>
+        <script src="javascript/blinkScript.js"></script>
+        <script src="javascript/changeScript.js"></script>
+    </head>
+    <body>
+        <div class ="title">
+            <h1>AI 4 ALL</h1>
+        </div>
+
+    <!-- Bootstrap Navigation Bar -->
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="level1">Level 1: What is AI?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level2">Level 2: How does an AI work?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level3">Level 3: Try out a neural network! </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level4">Level 4: 3D Calculus?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level5">Level 5: Enlightenment</a>
+      </li>
+    </ul>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
+      aria-valuemin="0" aria-valuemax="100" style="width:20%">
+        20%
+      </div>
+    </div>
+
+    <script>
+      function blink()
+            {
+                let body = document.querySelector('blink');
+                if (body.style.visibility === 'hidden')
+                {
+                    body.style.visibility = 'visible';
+                }
+                else
+                {
+                    body.style.visibility = 'hidden';
+                }
+            }
+
+window.setInterval(blink, 4000);
+    </script>
+
+<!-- Code from Bootstrap -->
+    <div class="alert alert-success" role="alert">
+      
+      Welcome to AI 4 ALL! This web app, created by Devesh Kumar of Maggie L. Walker Governor's School aims to inspire students to pursue advanced mathematics by learning how neural networks and AI work in the world around us.
+      
+    </div>
+
+
+<!-- Code from Bootstrap -->
+    <div class="container">
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="p-3 border bg-light"><p>This is level 1: An introduction to AI and the app.</p></div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">In this level of the app you will learn about real life examples of AI and their fundamental principles.</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">You will go onto learn about some of the logic behind AI and also experiment with a real, state of the art neural network.</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Finally, you can see how the mathematics you have/will learn in school is relevant to these real world examples.</div>
+    </div>
+  </div>
+</div>
+
+<!--What is AI panel-->
+<dcard>  
+<div class="card bg-light mb-3" style="width: 18;">
+  <div class="card-header">
+    What is AI?
+  </div>
+    <p class="card-text">Artifical intelligence is the use of technology to give computers intelligence. AI is everywhere in the world around us, from self-driving cars, to YouTube, to voice assistants. Often AI is misunderstood as some magical tool only geniuses in Silicon Valley can play with, but this is not the case. By the time you finish using this app, you will be enlightened with how this state of the art technology works. Machine learning, artifical intelligence, and neural networks are often used interchangeably, but there is a difference which I demonstrate below.</p>
+</div></dcard>
+
+<div class="container">
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="p-3 border bg-light"><p>Artifical Intelligence is any technology that replicates human intelligence in any way.</p></div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Machine learning achieves artificial intelligence through data.</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Neural networks are machine learning models that use the architecture of the human brain to achieve artifical intelligence through a network of neurons.</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">See below for some examples of AI in the real world.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var i = 0
+function change1()
+            {
+                if (i === 0)
+                {
+                    document.getElementById('slideshow1').src = "static/tesla1.png"
+                    i = 1;
+                    // https://www.google.com/url?sa=i&url=https%3A%2F%2Fmarketrealist.com%2F2019%2F08%2Ftesla-autopilot-troubles-go-way-beyond-crashes%2F&psig=AOvVaw1WOcCIhMT8qV496nfdtSXb&ust=1667346921298000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPio07nVi_sCFQAAAAAdAAAAABAT
+                }
+                else if (i === 1)
+                {
+                    document.getElementById('slideshow1').src = 'static/alexa.png'
+                    i = 0;
+                    // https://commons.wikimedia.org/wiki/File:Alexa_(40770465691).jpg                }
+            }
+        }
+
+window.setInterval(change1, 2000);
+
+function changePic1()
+            {
+                document.getElementById('slideshow1').src = "static/tesla1.png"
+                if (i === 0)
+                {
+                    document.getElementById('slideshow1').src = "static/tesla.png"
+                    i = 1;
+                    // https://www.google.com/url?sa=i&url=https%3A%2F%2Fmarketrealist.com%2F2019%2F08%2Ftesla-autopilot-troubles-go-way-beyond-crashes%2F&psig=AOvVaw1WOcCIhMT8qV496nfdtSXb&ust=1667346921298000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPio07nVi_sCFQAAAAAdAAAAABAT
+                }
+                else if (i === 1)
+                {
+                    document.getElementById('slideshow1').src = 'static/alexa.png'
+                    i = 0;
+                    // https://commons.wikimedia.org/wiki/File:Alexa_(40770465691).jpg                }
+            }
+            }
+
+</script> 
+
+<!-- Bootstrap Element (from Bootstrap) -->
+<div>
+  <div class="text-center">
+    <slideshow><img id = "slideshow1" src="static/tesla1.png" class="rounded" alt="..."height="300" width="500"></slideshow>
+    <!-- All Image Citations in changeScript.js file -->
+    <p>Image Citation in Code.</p>
+  <button type="submit" class="btn btn-primary" onclick="changePic1(); return false">See another example!</button>
+  </div>
+
+</div>
+
+<p>
+  App created by Devesh Kumar for Congressional App Challenge.
+</p>
+
+</html>
+

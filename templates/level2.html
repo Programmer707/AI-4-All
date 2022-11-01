@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/styles.css" rel="stylesheet">
+        <title>AI 4 ALL</title>
+        <script src="javascript/blinkScript.js"></script>
+        <script src="javascript/changeScript.js"></script>
+    </head>
+    <body>
+        <div class ="title">
+            <h1>AI 4 ALL</h1>
+        </div>
+
+    <!-- Bootstrap Navigation Bar -->
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="level1">Level 1: What is AI?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="level2">Level 2: How does an AI work?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level3">Level 3: Try out a neural network! </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level4">Level 4: 3D Calculus?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="level5">Level 5: Enlightenment</a>
+      </li>
+    </ul>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+      aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        40%
+      </div>
+    </div>
+
+
+<!-- Code from Bootstrap -->
+    <div class="container">
+  <div class="row g-2">
+    <div class="col-6">
+      <div class="p-3 border bg-light"><p>Now to learn about how AI actually works. We will specifically look at a neural network.</p></div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">A machine learning model needs to train off of data to "learn" so that it can make predictions. The information it trains on is called the "training data" and the information it tests its knowledge on is called the "test data." It's like studying for a history "test" by taking a practice or "training" test.</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">A neural network will first randomly guess, but it will use the training data to see where it is making a mistake and tweat its own "thinking" to do better next time. Just like we should all strive to do. :) This is what we call training the model.</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">The model specifically is made up of layers of neurons, which are just values from 0 to 1. The input data has multiple values ranging from 0 to 1 which can represent anything (say, pixels of an image) and then the network of neurons mathematically manipulates that input to reach an output which is a value(s) of 0 to 1. See the picture below. Fear not if this is confusing, we'll look at a real example on the next level.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Element (from Bootstrap) -->
+<div>
+  <div class="text-center">
+    <slideshow><img id = "slideshow1" src="static/neuralnet.png" class="rounded" alt="..."></slideshow>
+    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArtificial_neural_network&psig=AOvVaw0f-H7zHBqndGiu044ttkz8&ust=1667349081774000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjBiMDdi_sCFQAAAAAdAAAAABAE -->
+    <p>Image Citation in Code.</p>
+    </div>
+
+</div>
+
+<p>
+  App created by Devesh Kumar for Congressional App Challenge.
+</p>
+
+</html>
+
